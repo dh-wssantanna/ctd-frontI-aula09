@@ -1,0 +1,101 @@
+<!-- Felipe Lopes, José Souza, Paulo H. Costa -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa de trabalho</title>
+
+    <!-- Este é o link da fonte -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <style type="text/css">
+
+    body{
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .plano{
+            background-color: rgba(199, 198, 198, 0);
+            margin: 0 auto;
+            position: relative;
+            width: 200px;
+            border: solid rgba(128, 128, 128, 0.589);
+            border-radius: 10px;
+            height: 400px;
+            padding: 10px;
+            text-align: center;
+          
+        }
+    
+        .preco {
+            font-family: 'Montserrat', sans-serif;
+            position: relative;
+            
+        }
+
+
+        
+        .preco__cambio{
+        text-align: left;       
+        top: 10px;
+
+
+        }
+        .preco__valor{
+            font-weight: 900;
+            color: rgb(55, 55, 204);
+            font-size: 48px;
+        }
+
+
+        .preco__moeda{
+            font-weight: 900;
+            color: rgb(63, 63, 160);
+
+        }
+    
+    
+
+    </style>
+</head>
+<body>
+    <!-- O código HTML pode ser alterado se considerarem necessário. -->
+    
+    
+    <!-- Primeiro quadrado parte do 632 reais -->
+    
+    <div class="plano">
+            <div class="plano__sessao my-5">
+            <p class="preco">
+                <span class="preco__cambio">R$</span>
+                <span class="preco__valor">632</span>
+                <span class="preco__moeda">,39</span>
+            </p>
+            <p class="preco__total">Valor anual: R$ 5.465,09</p>
+            <button class="botao">Comprar</button>
+        </div>
+        <ul class="lista">
+            <li class="lista__item">
+                <img src="./imagens/checked.png" alt="Ícone verifado verde">
+            </li>
+            <li class="lista__item">100km</li>
+            <li class="lista__item">Com ar - 7 dias</li>
+            <li class="lista__item">
+                <img src="./imagens/checked.png" alt="Ícone verificado verde">
+            </li>
+            <li class="lista__item">
+                <img src="./imagens/checked.png" alt="Ícone verificado verde">
+            </li>
+            <li class="lista__item">
+                <img src="./imagens/unchecked.png" alt="Ícone de um X vermelho">
+            </li>
+            <li class="lista__item">R$ 50 mil</li>
+        </ul>
+    </div>
+</body>
+</html>
