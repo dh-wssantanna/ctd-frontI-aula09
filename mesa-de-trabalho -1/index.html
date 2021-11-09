@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--
+        Equipe: 01
+        Vinicius Ocker Fagundes,
+        Gustavo Ferraz,
+        Rafael rosa,
+        Damaris Souza,
+        Edmar Bilar,
+        Pedro Pinheiro
+        Kevin Piovezan
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa de trabalho</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Red+Hat+Mono:wght@700&display=swap" rel="stylesheet"> 
+    <style type="text/css">
+        /* Coloque o código fonte da atividade aqui */
+        .plano {
+            width: 170px;
+            margin: 0 auto;
+            background-color: aliceblue;
+        }
+        .plano__sessao{
+            border-radius: 15px 15px 0px 0px;
+            border: 2px solid rgb(107, 107, 107);
+            margin-bottom: 0;
+        }
+        .lista {
+            margin-top: -2px;
+            border-radius: 0px 0px 15px 15px;
+            border: 2px solid rgb(107, 107, 107);
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .lista__item{
+            padding: 15px;
+            font-size: 12px;
+            color:rgb(102, 102, 102);
+            font-family: Montserrat;
+        }
+        .lista__item img {
+            height: 16px;
+        }
+        .preco{
+            color: rgb(29, 16, 148);
+            text-align: center;
+            font-family: Montserrat;
+        }
+        .preco__valor{
+            font-size: 50px;
+            font-weight: 700;
+        }
+        .preco__moeda{
+            position: relative;
+            bottom: 24px;
+            font-weight: 700;
+        }
+        .preco__cambio{
+            position: relative;
+            bottom: 23px;
+            color: rgb(92, 92, 92);
+        }
+        .preco__total{
+            text-align: center;
+            font-size: 12px;
+            font-family: Montserrat;
+        }
+        .botao{
+            margin: 10px 10px 10px 10px;
+            position: relative;
+            left: 22px;
+            color: white;
+            font-size: 16px;
+            border: 0px solid #fff;
+            padding: 4px 24px 4px 24px;
+            border-radius: 14px;
+            background: rgb(145, 212, 37);
+        }
+    </style>
+</head>
+<body>
+    <!-- O código HTML pode ser alterado se considerarem necessário. -->
+    <div class="plano">
+        <div class="plano__sessao my-5">
+            <p class="preco">
+                <span class="preco__cambio">R$</span>
+                <span class="preco__valor">632</span>
+                <span class="preco__moeda">,39</span>
+            </p>
+            <p class="preco__total">Valor anual: R$ 5.465,09</p>
+            <button class="botao">Comprar</button>
+        </div>
+        <ul class="lista">
+            <li class="lista__item">
+                <img src="./imagens/checked.png" alt="Ícone verifado verde">
+            </li>
+            <li class="lista__item">100km</li>
+            <li class="lista__item">Com ar - 7 dias</li>
+            <li class="lista__item">
+                <img src="./imagens/checked.png" alt="Ícone verificado verde">
+            </li>
+            <li class="lista__item">
+                <img src="./imagens/checked.png" alt="Ícone verificado verde">
+            </li>
+            <li class="lista__item">
+                <img src="./imagens/unchecked.png" alt="Ícone de um X vermelho">
+            </li>
+            <li class="lista__item">R$ 50 mil</li>
+        </ul>
+    </div>
+</body>
+</html>
