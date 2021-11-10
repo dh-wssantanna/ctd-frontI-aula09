@@ -5,13 +5,144 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mesa de trabalho</title>
+    <!-- Importação das fontes do Google Fonts -->
+    <!-- Link da fonte importada: https://fonts.google.com/specimen/Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <style type="text/css">
         /* Coloque o código fonte da atividade aqui */
+
+        /* 
+            Configuração do Modelo de Caixa que ignora espaçamento interno 
+            e bordar no calculo de dimensão do elemento HTML 
+        */
+        * { 
+            box-sizing: border-box; 
+        }
+
+        body {
+            /* Definido a fonte Montserrat como padrão do documento */
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .plano {
+            /*
+                A propriedade border com essa sintaxe abrevia as propriedades
+                border-width, border-style, border-color.
+            */
+            border: 2px solid gray;
+            /* 
+                A propriedade border-radius adiciona contorno nas bordas 
+                do elemento HTML. 
+
+                Documentação: https://developer.mozilla.org/pt-BR/docs/Web/CSS/border-radius
+            */
+            border-radius: 25px;
+            /*
+                A propriedade margin com essa sintaxe abrevia as propriedades
+                margin-top, margin-right, margin-bottom e margin-left.
+
+                No exemplo a baixo, estamos definindo:
+                margin-top: 50px;
+                margin-right: auto;
+                margin-bottom: 50px;
+                margin-left: auto;
+            */
+            margin: 50px auto;
+            text-align: center;
+            width: 250px;
+        }
+
+        .plano__sessao {
+            border-bottom: 2px solid gray;
+            /*
+                A propriedade padding com essa sintaxe abrevia as propriedades
+                padding-top, padding-right, padding-bottom e padding-left.
+
+                No exemplo a baixo, estamos definindo:
+                padding-top: 15px;
+                padding-right: 10px;
+                padding-bottom: 25px;
+                padding-left: 10px;
+            */
+            padding: 15px 10px 25px;
+        }
+
+        .lista {
+            /* 
+                Remove os marcadores da lista.
+                
+                Documentação: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style
+            */
+            list-style: none;
+            padding: 10px 0;
+        }
+
+        .lista__item {
+            margin: 25px 0;
+        }
+
+        .preco {
+            margin: 0;
+            padding: 10px 0 0;
+        }
+
+        .preco__valor {
+            font-size: 72px;
+            /*
+                Define o peso da fonte.
+                100-300 : Light
+                400-500 : Regular
+                600-700 : Bold
+                800-900 : Black 
+
+                Documentação: https://developer.mozilla.org/pt-BR/docs/Web/CSS/font-weight
+            */
+            font-weight: 700;
+        }
+
+        .preco__moeda {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .preco__cambio,
+        .preco__moeda {
+            position: relative;
+            top: -30px;
+        }
+
+        .preco__total {
+            font-size: 14px;
+            margin: 10px 0 25px;
+        }
+
+        .botao {
+            background-color: rgb(130, 215, 10);
+            border-radius: 25px;
+            color: white;
+            font-weight: 700;
+            padding: 5px 25px;
+            /*
+                Definem/Remove decorações para texto: sublinhado, riscado, etc.
+
+                Documentação: https://developer.mozilla.org/pt-BR/docs/Web/CSS/text-decoration
+            */
+            text-decoration: none;
+        }
 
     </style>
 </head>
 <body>
     <!-- O código HTML pode ser alterado se considerarem necessário. -->
+    <!-- 
+        Esse fragmento de código HTML utilizou a metodologia BEM (Bloco, Elemento e Modificador) 
+        para gerar os nomes das classes. 
+
+        Documentação: http://getbem.com/introduction/
+        Artigo de apoio: https://desenvolvimentoparaweb.com/css/bem/
+    -->
     <div class="plano">
         <div class="plano__sessao">
             <p class="preco">
@@ -20,7 +151,7 @@
                 <span class="preco__moeda">,39</span>
             </p>
             <p class="preco__total">Valor anual: R$ 5.465,09</p>
-            <button class="botao">Comprar</button>
+            <a href="./" class="botao">Comprar</a>
         </div>
         <ul class="lista">
             <li class="lista__item">
