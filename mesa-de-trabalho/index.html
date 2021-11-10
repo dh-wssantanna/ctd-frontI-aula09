@@ -4,10 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mesa de trabalho</title>
+    <title>Mesa de trabalho - Grupo 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+
     <style type="text/css">
         /* Coloque o código fonte da atividade aqui */
 
+/* PARTICIPANTES
+Rodrigo Mello
+Emanuel Sidon
+Larissa Odani
+Igor Costa
+Ana Paula Gessi
+Gustavo Brina */
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+            box-shadow: none;
+        }
+
+        .plano { 
+            display: inline-block;
+            text-align: center;
+            border: 2px solid rgb(150, 149, 149);
+            border-radius: 8px;
+            background-color: #0c0c0c0e;
+            width: 200px;
+        }
+
+        .preco_valor {
+            font-size: 50px;
+            color: rgb(5,76,137);
+            font-weight: 700;
+        }
+
+        .preco_moeda {
+            color: rgba(5,76,137);
+            font-weight: 700;
+            position: absolute;
+            left: 15.2%;
+            top: 3.5%;
+            font-size: 22px;  
+        }
+        
+        .preco_cambio {
+            color: rgb(126, 126, 126);
+            position: absolute;
+            left: 4%;
+            top: 4%;
+            font-size: 13px;
+            
+        }
+
+        .plano__sessao{
+            border-bottom: 2px solid rgb(150, 149, 149);
+            height: 120px;
+            margin-top: 10px; 
+        }
+
+        .lista {
+            height: 400px;
+            line-height: 50px;
+            padding-top: 20px;
+            color: rgb(146, 146, 146);
+        }
+        
+        .botao{
+            color: #fff;
+            background-color:rgb(196,212,36);
+            width: 110px;
+            border-radius: 10px;
+            border: none;
+            padding: 4px;
+            font-weight: 700;
+            font-size: 12px;
+        }
+
+
+    .preco__total{
+        font-size: 10px;
+        color: rgb(146, 146, 146);
+        padding-bottom: 10px;
+    }
+    
     </style>
 </head>
 <body>
@@ -15,12 +101,12 @@
     <div class="plano">
         <div class="plano__sessao">
             <p class="preco">
-                <span class="preco__cambio">R$</span>
-                <span class="preco__valor">632</span>
-                <span class="preco__moeda">,39</span>
+                <span class="preco_cambio">R$</span>
+                <span class="preco_valor">632</span>
+                <span class="preco_moeda">,39</span>
             </p>
             <p class="preco__total">Valor anual: R$ 5.465,09</p>
-            <button class="botao">Comprar</button>
+            <button class="botao">COMPRAR</button>
         </div>
         <ul class="lista">
             <li class="lista__item">
