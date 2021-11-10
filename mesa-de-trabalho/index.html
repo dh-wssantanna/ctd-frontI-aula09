@@ -4,40 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@300;400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <title>Mesa de trabalho</title>
     <style type="text/css">
         /* Coloque o código fonte da atividade aqui */
 
+        body {
+            font-family: 'Montserrat', sans-serif;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .botao {
+            background-color: #c6d12b;
+            border-radius: 30px;
+            border: none;
+            width: 40%;
+            color: #fff;
+            padding: 5px 10px;
+            margin: 0 auto;
+            text-align: center;
+            font-weight: 400;
+        }
+
+        .plano {
+            width: 250px;
+            background: #f7f7f7;
+            border-radius: 1em;
+            border: 2px solid grey;
+            float: left;
+            text-align: center;
+            position: absolute;
+            margin-top: 50px;   
+            left: calc(50% - 200px);
+        }
+
+        .preco_valor,  .preco_moeda {
+            color: #00508d;
+        }
+        
+        .preco {
+            position: relative;
+        }
+
+        .preco_valor {
+            font-size: 60px;
+            font-weight: 700;
+        }
+
+        .preco_moeda {
+            position: absolute;
+            top: 10px; 
+            font-weight: 700;
+            font-size: 22px
+            
+        }
+       
+        .preco_rs {
+            position: absolute;
+            top: 15px;
+            left: 2.5em;
+        }
+
+        .lista {
+            list-style: none;
+            border-top: 2px solid grey;
+            padding: 20px 0px;
+        }
+        
+        .lista_item {
+            text-align: center;
+            padding: 10px 0px;
+        }
     </style>
 </head>
 <body>
     <!-- O código HTML pode ser alterado se considerarem necessário. -->
     <div class="plano">
-        <div class="plano__sessao">
+        <div class="plano_sessao">
             <p class="preco">
-                <span class="preco__cambio">R$</span>
-                <span class="preco__valor">632</span>
-                <span class="preco__moeda">,39</span>
+                <span class="preco_rs">R$</span>
+                <span class="preco_valor">632</span>
+                <span class="preco_moeda">,39</span>
             </p>
-            <p class="preco__total">Valor anual: R$ 5.465,09</p>
-            <button class="botao">Comprar</button>
+            <p class="preco_total">Valor anual: R$ 5.465,09</p>
+            <button class="botao">COMPRAR</button>
         </div>
         <ul class="lista">
-            <li class="lista__item">
+            <li class="lista_item">
                 <img src="./imagens/checked.png" alt="Ícone verifado verde">
             </li>
-            <li class="lista__item">100km</li>
-            <li class="lista__item">Com ar - 7 dias</li>
-            <li class="lista__item">
+            <li class="lista_item">100km</li>
+            <li class="lista_item">Com ar - 7 dias</li>
+            <li class="lista_item">
                 <img src="./imagens/checked.png" alt="Ícone verificado verde">
             </li>
-            <li class="lista__item">
+            <li class="lista_item">
                 <img src="./imagens/checked.png" alt="Ícone verificado verde">
             </li>
-            <li class="lista__item">
+            <li class="lista_item">
                 <img src="./imagens/unchecked.png" alt="Ícone de um X vermelho">
             </li>
-            <li class="lista__item">R$ 50 mil</li>
+            <li class="lista_item">R$ 50 mil</li>
         </ul>
     </div>
 </body>
